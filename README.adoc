@@ -1,6 +1,6 @@
 
 
-image::img/pblogo.png[]
+image::img/pblogo.png[role="center]
 
 <<<
 
