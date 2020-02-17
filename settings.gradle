@@ -1,2 +1,2 @@
-include ':kotlin-example', ':java-example'
+include ':kotlin-example', ':java-example', ':pushbots-plugin-example'
 rootProject.name='android-sdk-example'
