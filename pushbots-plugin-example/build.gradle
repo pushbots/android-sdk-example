@@ -1,8 +1,9 @@
+apply plugin: 'com.pushbots.android.plugin.pushbots-gradle-plugin'
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-apply plugin: 'com.pushbots.android.plugin.pushbots-gradle-plugin'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -31,6 +32,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.pushbots:pushbots-lib:3.2.14@aar'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.firebase:firebase-messaging:12.0.1'
+
+    implementation 'com.google.android.gms:play-services-base:12.0.1'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
