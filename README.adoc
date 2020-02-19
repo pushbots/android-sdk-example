@@ -120,6 +120,43 @@ image::img/alias.jpg[]
 
 <<<
 
+== Use our plugin to fix dependencies conflicts
+
+
+- Using the https://docs.gradle.org/current/userguide/plugins.html#sec:plugins_block[plugins DSL]
+
+[source, groovy]
+----
+plugins {
+  id "com.pushbots.android.plugin.pushbots-gradle-plugin" version "1.0-SNAPSHOT"
+}
+----
+
+<<<
+<<<
+<<<
+<<<
+
+- Using legacy https://docs.gradle.org/current/userguide/plugins.html#sec:old_plugin_application[plugin application]:
+
+[source, groovy]
+
+----
+buildscript {
+  repositories {
+   maven { url "https://plugins.gradle.org/m2/" }
+  }
+
+// Inside your app.build.gradle
+dependencies {
+   classpath "gradle.plugin.com.pushbots:pushbots-gradle-plugin:1.0-SNAPSHOT"
+  }
+}
+
+
+apply plugin: "com.pushbots.android.plugin.pushbots-gradle-plugin"
+
+----
 
 
 
