@@ -162,6 +162,10 @@ apply plugin: "com.pushbots.android.plugin.pushbots-gradle-plugin"
 
 == How to get Web-Api-Key and App-id
 
+You will need to provide Web-Api-Key and App-Id while initializing Pushbots:-
+
+*`Pushbots.sharedInstance().init(context, webApiKey, fcmAppId);`*
+
 image::fcm-info.png[]
 
 
