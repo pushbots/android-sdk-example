@@ -158,6 +158,12 @@ dependencies {
 apply plugin: "com.pushbots.android.plugin.pushbots-gradle-plugin"
 
 ----
+<<<
+
+== How to get Web-Api-Key and App-id
+
+image::fcm-info.png[]
+
 
 
 
@@ -174,6 +180,7 @@ android.useAndroidX=true
 android.enableJetifier=true
 ----
 <<<
+
 
 
 
